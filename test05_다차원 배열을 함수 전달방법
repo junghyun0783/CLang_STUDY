@@ -46,6 +46,6 @@ int main(){
     char cakes[2 + 5] = {'A',};
     char pies[2 * sizeof(long double) + 1] = {'A',};
 
-
+    
 }
 
