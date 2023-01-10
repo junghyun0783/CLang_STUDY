@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(){
+int main()
+{
 
     /* 하나의 데이터 */
     // int *ptr = NULL;
@@ -34,19 +35,23 @@ int main(){
     int(*ptr2d)[2] = (int(*)[2])malloc(sizeof(int) * row * col);
     // int(*ptr2d)[col] = (int(*)[col])malloc(sizeof(int) * row * col);    //VLA 를 지원할경우
 
-    if(!ptr2d) exit(1);
+    if (!ptr2d)
+        exit(1);
 
-    for(int r =0; r < row; r++){
-        for(int c =0; c < col; c++){
+    for (int r = 0; r < row; r++)
+    {
+        for (int c = 0; c < col; c++)
+        {
             ptr2d[r][c] = c + col * r;
         }
     }
 
-    for(int r =0; r < row; r++){
-        for(int c =0; c < col; c++){
+    for (int r = 0; r < row; r++)
+    {
+        for (int c = 0; c < col; c++)
+        {
             printf("%d", ptr2d[r][c]);
         }
         printf("\n");
     }
-
 }
