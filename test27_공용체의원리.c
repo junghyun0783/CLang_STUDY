@@ -8,7 +8,8 @@ int main()
         - Store diferent data types in the same memory space
           -> 서로 다른 타입들이 같은 메모리에 공간을 사용한다.
         - Structure vs Union
-          ->
+          -> 구조체와 공용체의 차이점은 메모리를 어떻게 활용하느냐의 차이 입니다.
+          -> 공용체는 좀 유연하고 편리한 문법이지만 실수할 확률이 많다.
     */
 
     // 메모리 사이즈는 8이다. 이유는 double의 사이즈가 8이다. 즉 사용하기전 최소 사용량을 8로 지정한다.
