@@ -20,6 +20,7 @@ int main(){
         restrict (__restrict in VS)
         - sole initial means of accessing a data object
         - compiler can't check this restriction
+        - 아래와 같이 par = ar 이 같은 상황인데 
     */
     int ar[10] = {1,2,3,4,5,6,7,8,9,10};
     int *par = ar;

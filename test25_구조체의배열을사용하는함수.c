@@ -20,7 +20,7 @@ int main()
     {
         printf("Malloc failed");
         exit(1);
-    }
+    } 
 
     my_books[0] = (struct book){"The Great Gatsby", "F. Scott Fitzgerald"};
     my_books[1] = (struct book){"Hamlet", "William Shakespeare"};
